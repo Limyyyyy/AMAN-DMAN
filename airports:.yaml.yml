@@ -1,0 +1,64 @@
+# yaml-language-server: $schema=./airports.schema.yaml
+
+airports:
+  VHHH:
+    location:
+      latitude: 22.1832
+      longitude: 113.5453
+    runwayThresholds:
+      07L:
+        location:
+          latitude: 22.191772
+          longitude: 113.525626
+        elevation: 23
+        trueHeading: 71
+      07C:
+        location:
+          latitude: 22.191772
+          longitude: 113.525626
+        elevation: 23
+        trueHeading: 71
+      07R:
+        location:
+          latitude: 22.191772
+          longitude: 113.525626
+        elevation: 23
+        trueHeading: 71
+      25L:
+        location:
+          latitude: 22.195445
+          longitude: 113.545024
+        elevation: 23
+        trueHeading: 251
+      25C:
+        location:
+          latitude: 22.195445
+          longitude: 113.545024
+        elevation: 23
+        trueHeading: 251
+      25R:
+        location:
+          latitude: 22.195445
+          longitude: 113.545024
+        elevation: 23
+        trueHeading: 251
+    independentRunwaySystems:
+      - ["07L", "07C", "07R"]
+      - ["25L", "25C", "25R"]
+  VMMC:
+    location:
+      latitude: 60.19250943987119
+      longitude: 11.096549971455543
+    runwayThresholds:
+      16:
+        location:
+          latitude: 60.18501045995491
+          longitude: 11.073783755507158
+        elevation: 681
+        trueHeading: 16
+      34:
+        location:
+          latitude: 60.17580319639779
+          longitude: 11.107782247775026
+        elevation: 681
+        trueHeading: 16
