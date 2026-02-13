@@ -1,0 +1,84 @@
+# yaml-language-server: $schema=./settings.schema.yaml
+
+timelines:
+  ENGM:
+    - timelineTitle: "01ALL"
+      arrivalLabelLayoutId: osloArr
+      right:
+        runways: ["01L", "01R"]
+
+    - timelineTitle: "19ALL"
+      arrivalLabelLayoutId: osloArr
+      right:
+        runways: ["19L", "19R"]
+
+    - timelineTitle: "19R/19L"
+      arrivalLabelLayoutId: osloArr
+      left:
+        runways: ["19R"]
+      right:
+        runways: ["19L"]
+
+    - timelineTitle: "01L/01R"
+      arrivalLabelLayoutId: osloArr
+      left:
+        runways: ["01L"]
+      right:
+        runways: ["01R"]
+
+  ENBR:
+    - timelineTitle: "BR17"
+      arrivalLabelLayoutId: osloArr
+      right:
+        runways: ["17"]
+
+    - timelineTitle: "BR35"
+      arrivalLabelLayoutId: osloArr
+      right:
+        runways: ["35"]
+
+    - timelineTitle: "ENBR ALL"
+      arrivalLabelLayoutId: osloArr
+      right:
+        runways: ["17", "35"]
+
+  VHHH:
+    - timelineTitle: "07"
+      arrivalLabelLayoutId: VHHHARR
+      right:
+        runways: ["07L", "07C", "07R"]
+
+    - timelineTitle: "25"
+      arrivalLabelLayoutId: VHHHARR
+      right:
+        runways: ["25L", "25C", "25R"]
+
+arrivalLabelLayouts:
+  osloArr:
+    - {src: assignedRunway, w: 4}
+    - {src: assignedStar, w: 4, maxLen: 3}
+    - {src: callSign, w: 8}
+    - {src: aircraftType, w: 5}
+    - {src: wakeCategory, w: 2}
+    - {src: timeToLoseOrGain, w: 4, align: right}
+    - {src: distanceBehindPreceding, w: 5, align: right}
+
+  simpleLayout:
+    - {src: assignedRunway, w: 4}
+    - {src: callSign, w: 8}
+
+  VHHHARR:
+    - {src: assignedRunway, w: 4}
+    - {src: callSign, w: 9}
+    - {src: assignedStar, w: 4, maxLen: 3}
+    - {src: timeToLoseOrGain, w: 4, align: left}
+    - {src: estimatedLandingTime, w: 5, maxLen: 5, align: right}
+
+connectionConfig:
+  atcClient:
+    host: "localhost"
+    port: 12345
+  masterSlaveApi:
+    host: "https://aman-dman-api.fly.dev"
+
+theme: "JTattoo"

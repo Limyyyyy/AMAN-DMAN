@@ -114,6 +114,43 @@ stars:
       - { id: VH720, typicalAltitude: 1700, typicalSpeed: 180 }
       - { id: VH721, typicalAltitude: 1600, typicalSpeed: 160 }
       - { id: VHHH, typicalAltitude: 23 }
+
+  - runway: 07L
+    name: CANTO3A
+    waypoints:
+      - { id: CANTO, typicalAltitude: 13000, typicalSpeed: 280 }
+      - { id: MURRY, typicalAltitude: 11000, typicalSpeed: 250 }
+      - { id: SILVA, typicalAltitude: 8000, typicalSpeed: 250 }
+      - { id: LIMES, typicalAltitude: 4000, typicalSpeed: 210 }
+      - { id: TUTBA, typicalAltitude: 2000, typicalSpeed: 180 }
+      - { id: VH701, typicalAltitude: 1700, typicalSpeed: 180 }
+      - { id: VH702, typicalAltitude: 1500, typicalSpeed: 160 }
+      - { id: VHHH, typicalAltitude: 23 }
+
+  - runway: 07C
+    name: CANTO3A
+    waypoints:
+      - { id: CANTO, typicalAltitude: 13000, typicalSpeed: 280 }
+      - { id: MURRY, typicalAltitude: 11000, typicalSpeed: 250 }
+      - { id: SILVA, typicalAltitude: 8000, typicalSpeed: 250 }
+      - { id: LIMES, typicalAltitude: 4000, typicalSpeed: 210 }
+      - { id: TONIC, typicalAltitude: 2000, typicalSpeed: 180 }
+      - { id: VH710, typicalAltitude: 1700, typicalSpeed: 180 }
+      - { id: VH711, typicalAltitude: 1600, typicalSpeed: 160 }
+      - { id: VHHH, typicalAltitude: 23 }
+
+  - runway: 07R
+    name: CANTO3A
+    waypoints:
+      - { id: CANTO, typicalAltitude: 13000, typicalSpeed: 280 }
+      - { id: MURRY, typicalAltitude: 11000, typicalSpeed: 250 }
+      - { id: SILVA, typicalAltitude: 8000, typicalSpeed: 250 }
+      - { id: LIMES, typicalAltitude: 4000, typicalSpeed: 210 }
+      - { id: STELA, typicalAltitude: 2000, typicalSpeed: 180 }
+      - { id: VH720, typicalAltitude: 1700, typicalSpeed: 180 }
+      - { id: VH721, typicalAltitude: 1600, typicalSpeed: 160 }
+      - { id: VHHH, typicalAltitude: 23 }
+
   - runway: 07L
     name: SIERA7C
     waypoints:
@@ -227,6 +264,52 @@ stars:
     waypoints:
       - { id: BETTY, typicalSpeed: 280 }
       - { id: MANGO, typicalAltitude: 13000, typicalSpeed: 280 }
+      - { id: TEDUR, typicalAltitude: 6000, typicalSpeed: 220 }
+      - { id: RIVMI, typicalAltitude: 4500, typicalSpeed: 200 }
+      - { id: LIKBI, typicalAltitude: 4500, typicalSpeed: 180 }
+      - { id: HH813, typicalAltitude: 4500, typicalSpeed: 180 }
+      - { id: VHHH, typicalAltitude: 23 }
+
+  - runway: 25L
+    name: CANTO3B
+    waypoints:
+      - { id: CANTO, typicalAltitude: 13000, typicalSpeed: 280 }
+      - { id: MURRY, typicalAltitude: 11000, typicalSpeed: 280 }
+      - { id: SILVA, typicalAltitude: 9000, typicalSpeed: 250 }
+      - { id: HH623, typicalAltitude: 6000, typicalSpeed: 250 }
+      - { id: HH622, typicalAltitude: 6000, typicalSpeed: 250 }
+      - { id: TEDUR, typicalAltitude: 6000, typicalSpeed: 220 }
+      - { id: RIVMI, typicalAltitude: 4500, typicalSpeed: 200 }
+      - { id: RUNSU, typicalAltitude: 4500, typicalSpeed: 180 }
+      - { id: VH515, typicalAltitude: 4300, typicalSpeed: 180 }
+      - { id: SAGNI, typicalAltitude: 3800, typicalSpeed: 180 }
+      - { id: TOPUN, typicalAltitude: 2700, typicalSpeed: 180 }
+      - { id: VH536, typicalAltitude: 1800, typicalSpeed: 160 }
+      - { id: VH528, typicalAltitude: 1700, typicalSpeed: 160 }
+      - { id: VHHH, typicalAltitude: 23 }
+
+  - runway: 25C
+    name: CANTO3B
+    waypoints:
+      - { id: CANTO, typicalAltitude: 13000, typicalSpeed: 280 }
+      - { id: MURRY, typicalAltitude: 11000, typicalSpeed: 280 }
+      - { id: SILVA, typicalAltitude: 9000, typicalSpeed: 250 }
+      - { id: HH623, typicalAltitude: 6000, typicalSpeed: 250 }
+      - { id: HH622, typicalAltitude: 6000, typicalSpeed: 250 }
+      - { id: TEDUR, typicalAltitude: 6000, typicalSpeed: 220 }
+      - { id: RIVMI, typicalAltitude: 4500, typicalSpeed: 200 }
+      - { id: CANUP, typicalAltitude: 4500, typicalSpeed: 180 }
+      - { id: HH832, typicalAltitude: 4500, typicalSpeed: 180 }
+      - { id: VHHH, typicalAltitude: 23 }
+
+  - runway: 25R
+    name: CANTO3B
+    waypoints:
+      - { id: CANTO, typicalAltitude: 13000, typicalSpeed: 280 }
+      - { id: MURRY, typicalAltitude: 11000, typicalSpeed: 280 }
+      - { id: SILVA, typicalAltitude: 9000, typicalSpeed: 250 }
+      - { id: HH623, typicalAltitude: 6000, typicalSpeed: 250 }
+      - { id: HH622, typicalAltitude: 6000, typicalSpeed: 250 }
       - { id: TEDUR, typicalAltitude: 6000, typicalSpeed: 220 }
       - { id: RIVMI, typicalAltitude: 4500, typicalSpeed: 200 }
       - { id: LIKBI, typicalAltitude: 4500, typicalSpeed: 180 }
