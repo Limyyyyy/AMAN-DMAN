@@ -62,14 +62,14 @@ airports:
         trueHeading: 71
       07C:
         location:
-          latitude: 22.191772
-          longitude: 113.525626
+          latitude: 22.184058
+          longitude: 113.535664
         elevation: 23
         trueHeading: 71
       07R:
         location:
-          latitude: 22.191772
-          longitude: 113.525626
+          latitude: 22.174803
+          longitude: 113.535799
         elevation: 23
         trueHeading: 71
       25L:
@@ -80,8 +80,8 @@ airports:
         trueHeading: 251
       25C:
         location:
-          latitude: 22.195445
-          longitude: 113.545024
+          latitude: 22.191285
+          longitude: 113.553678
         elevation: 23
         trueHeading: 251
       25R:
