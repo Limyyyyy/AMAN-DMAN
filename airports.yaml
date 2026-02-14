@@ -51,43 +51,43 @@ airports:
 
   VHHH:
     location:
-      latitude: 22.1832
-      longitude: 113.5453
+      latitude: 22.3088888889
+      longitude: 113.9147222222
     runwayThresholds:
       07L:
         location:
-          latitude: 22.191772
-          longitude: 113.525626
+          latitude: 22.3215888889
+          longitude: 113.8822944444
         elevation: 23
         trueHeading: 71
       07C:
         location:
-          latitude: 22.184058
-          longitude: 113.535664
+          latitude: 22.3112722222
+          longitude: 113.8990666667
         elevation: 23
         trueHeading: 71
       07R:
         location:
-          latitude: 22.174803
-          longitude: 113.535799
+          latitude: 22.296675
+          longitude: 113.8994416667
         elevation: 23
         trueHeading: 71
       25L:
         location:
-          latitude: 22.195445
-          longitude: 113.545024
+          latitude: 22.3074305556
+          longitude: 113.9328194444
         elevation: 23
         trueHeading: 251
       25C:
         location:
-          latitude: 22.191285
-          longitude: 113.553678
+          latitude: 22.3202361111
+          longitude: 113.9268833333
         elevation: 23
         trueHeading: 251
       25R:
         location:
-          latitude: 22.195445
-          longitude: 113.545024
+          latitude: 22.3317916667
+          longitude: 113.9139555556
         elevation: 23
         trueHeading: 251
     independentRunwaySystems:
