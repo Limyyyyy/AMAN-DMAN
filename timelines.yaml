@@ -1,0 +1,35 @@
+---
+timelines:
+  VHHH:
+    defaults:
+      defaultArrivalLabelLayoutId: "VHHHAPP"
+      defaultDepartureLabelLayoutId: "VHHHDep"
+    runwayBased:
+    - timelineTitle: "RWY07ALL"
+      left: []
+      right:
+      - "07L"
+      - "07C"
+      - "07R"
+      arrivalLabelLayoutId: "VHHHAPP"
+      departureLabelLayoutId: "VHHHDEP"
+    - timelineTitle: "RWY25ALL"
+      left: []
+      right:
+      - "25L"
+      - "25C"
+      - "25R"
+      arrivalLabelLayoutId: "VHHHAPP"
+      departureLabelLayoutId: "VHHHDEP"
+    feederFixBased:
+    - timelineTitle: "MURRY"
+      left: []
+      right:
+      - "MURRY"
+      arrivalLabelLayoutId: "VHHHTMC"
+    - timelineTitle: "MANGO MUSEL"
+      left:
+      - "MANGO"
+      right:
+      - "MUSEL"
+      arrivalLabelLayoutId: "VHHHTMC"
