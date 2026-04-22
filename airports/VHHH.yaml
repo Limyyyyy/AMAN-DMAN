@@ -1,421 +1,197 @@
 # yaml-language-server: $schema=./stars.schema.yaml
 
-stars:
-  - runway: 07L
-    name: ABBEY4A
-    waypoints:
-      - { id: ABBEY, typicalSpeed: 280 }
-      - { id: MUSEL, typicalAltitude: 11000, typicalSpeed: 280 }
-      - { id: HH512, typicalAltitude: 9000, typicalSpeed: 250 }
-      - { id: HH511, typicalAltitude: 6000, typicalSpeed: 250 }
-      - { id: LIMES, typicalAltitude: 4000, typicalSpeed: 210 }
-      - { id: TUTBA, typicalAltitude: 2000, typicalSpeed: 180 }
-      - { id: VH701, typicalAltitude: 1700, typicalSpeed: 180 }
-      - { id: VH702, typicalAltitude: 1500, typicalSpeed: 160 }
-      - { id: VHHH, typicalAltitude: 23 }
+location:
+  latitude: 22.3088888889
+  longitude: 113.9147222222
 
-  - runway: 07C
-    name: ABBEY4A
-    waypoints:
-      - { id: ABBEY, typicalSpeed: 280 }
-      - { id: MUSEL, typicalAltitude: 11000, typicalSpeed: 280 }
-      - { id: HH512, typicalAltitude: 9000, typicalSpeed: 250 }
-      - { id: HH511, typicalAltitude: 6000, typicalSpeed: 250 }
-      - { id: LIMES, typicalAltitude: 4000, typicalSpeed: 210 }
-      - { id: TONIC, typicalAltitude: 2000, typicalSpeed: 180 }
-      - { id: VH710, typicalAltitude: 1700, typicalSpeed: 180 }
-      - { id: VH711, typicalAltitude: 1600, typicalSpeed: 160 }
-      - { id: VHHH, typicalAltitude: 23 }
+feederFixes: ["MUSEL", "MANGO", "MURRY"]
+feederFixTimelineArrivalLabelLayoutId: "TMCARR"
 
-  - runway: 07R
-    name: ABBEY4A
-    waypoints:
-      - { id: ABBEY, typicalSpeed: 280 }
-      - { id: MUSEL, typicalAltitude: 11000, typicalSpeed: 280 }
-      - { id: HH512, typicalAltitude: 9000, typicalSpeed: 250 }
-      - { id: HH511, typicalAltitude: 6000, typicalSpeed: 250 }
-      - { id: LIMES, typicalAltitude: 4000, typicalSpeed: 210 }
-      - { id: STELA, typicalAltitude: 2000, typicalSpeed: 180 }
-      - { id: VH720, typicalAltitude: 1700, typicalSpeed: 180 }
-      - { id: VH721, typicalAltitude: 1600, typicalSpeed: 160 }
-      - { id: VHHH, typicalAltitude: 23 }
+runwayThresholds:
+  07L:
+    location:
+      latitude: 22.3215888889
+      longitude: 113.8822944444
+    elevation: 23
+    trueHeading: 71
+  07C:
+    location:
+      latitude: 22.3112722222
+      longitude: 113.8990666667
+    elevation: 23
+    trueHeading: 71
+  07R:
+    location:
+      latitude: 22.296675
+      longitude: 113.8994416667
+    elevation: 23
+    trueHeading: 71
+  25L:
+    location:
+      latitude: 22.3074305556
+      longitude: 113.9328194444
+    elevation: 23
+    trueHeading: 251
+  25C:
+    location:
+      latitude: 22.3202361111
+      longitude: 113.9268833333
+    elevation: 23
+    trueHeading: 251
+  25R:
+    location:
+      latitude: 22.3317916667
+      longitude: 113.9139555556
+    elevation: 23
+    trueHeading: 251
+independentRunwaySystems:
+  - ["07L", "07R"]
+  - ["07C", "07R"]
+  - ["25L", "25R"]
+  - ["25L", "25C"]
 
-  - runway: 07L
-    name: BETTY3A
-    waypoints:
-      - { id: BETTY, typicalSpeed: 280 }
-      - { id: MANGO, typicalAltitude: 13000, typicalSpeed: 280 }
-      - { id: HH511, typicalAltitude: 7000, typicalSpeed: 250 }
-      - { id: LIMES, typicalAltitude: 4000, typicalSpeed: 210 }
-      - { id: TUTBA, typicalAltitude: 2000, typicalSpeed: 180 }
-      - { id: VH701, typicalAltitude: 1700, typicalSpeed: 180 }
-      - { id: VH702, typicalAltitude: 1500, typicalSpeed: 160 }
-      - { id: VHHH, typicalAltitude: 23 }
+arrivalProfiles:
+  07*:
+    - arrivalName: "*"
+      frozenSequenceArea: APP
+      sequencingArea: TMC
+      fixes:
+        # ILS
+        - { fix: LIMES, speed: 210, altitude: 4000, role: IAF }
+        - { fix: STELA, speed: 180, altitude: 2000 }
+        - { fix: TONIC, speed: 180, altitude: 2000 }
+        - { fix: TUTBA, speed: 180, altitude: 2000 }
+        - { fix: VH720, speed: 180, altitude: 1700, role: IF }
+        - { fix: VH721, speed: 160, altitude: 1500 }
+        - { fix: VH710, speed: 180, altitude: 1700, role: IF }
+        - { fix: VH711, speed: 160, altitude: 1500 }
+        - { fix: VH701, speed: 180, altitude: 1500, role: IF }
+        - { fix: VH702, speed: 160, altitude: 1500 }        
 
-  - runway: 07C
-    name: BETTY3A
-    waypoints:
-      - { id: BETTY, typicalSpeed: 280 }
-      - { id: MANGO, typicalAltitude: 13000, typicalSpeed: 280 }
-      - { id: HH511, typicalAltitude: 7000, typicalSpeed: 250 }
-      - { id: LIMES, typicalAltitude: 4000, typicalSpeed: 210 }
-      - { id: TONIC, typicalAltitude: 2000, typicalSpeed: 180 }
-      - { id: VH710, typicalAltitude: 1700, typicalSpeed: 180 }
-      - { id: VH711, typicalAltitude: 1600, typicalSpeed: 160 }
-      - { id: VHHH, typicalAltitude: 23 }
+        # RNP Z
+        - { fix: ARGON, speed: 180, altitude: 2000 }
 
-  - runway: 07R
-    name: BETTY3A
-    waypoints:
-      - { id: BETTY, typicalSpeed: 280 }
-      - { id: MANGO, typicalAltitude: 13000, typicalSpeed: 280 }
-      - { id: HH511, typicalAltitude: 7000, typicalSpeed: 250 }
-      - { id: LIMES, typicalAltitude: 4000, typicalSpeed: 210 }
-      - { id: STELA, typicalAltitude: 2000, typicalSpeed: 180 }
-      - { id: VH720, typicalAltitude: 1700, typicalSpeed: 180 }
-      - { id: VH721, typicalAltitude: 1600, typicalSpeed: 160 }
-      - { id: VHHH, typicalAltitude: 23 }
+        # RNP Y
+        - { fix: TD, speed: 250, altitude: 11000, role: IAF }
+        - { fix: NIXUS, speed: 250, altitude: 8000 }
+        - { fix: NOLIB, speed: 220, altitude: 6300, role: IF }
+        - { fix: VH703, speed: 220, altitude: 5300 }
+        - { fix: VH704, speed: 180, altitude: 3000 }
+        - { fix: VH715, speed: 160, altitude: 1700 }
+        - { fix: VH716, speed: 150, altitude: 1100 }
+    - arrivalName: "ABBEY*"
+      fixes:
+        - { fix: ENPET, speed: 280, altitude: 26000 }
+        - { fix: MUSEL, speed: 280, altitude: 11000 }
+        - { fix: HH512, speed: 250, altitude: 9000 }
+    - arrivalName: "BETTY*"
+      fixes:
+        - { fix: SONNY, speed: 280, altitude: 26000 }
+        - { fix: CYBER, speed: 280, altitude: 26000 }
+        - { fix: MANGO, speed: 280, altitude: 13000 }
+    - arrivalName: "CANTO*"
+      fixes:
+        - { fix: MAPLE, speed: 280, altitude: 26000 }
+        - { fix: CANTO, speed: 280, altitude: 14000 }
+        - { fix: MURRY, speed: 280, altitude: 11000 }
+    - arrivalName: "SIERA*"
+      fixes:
+        - { fix: SIERA, speed: 280, altitude: 19000 }
+        - { fix: BORDA, speed: 280, altitude: 15000 }
+        - { fix: CANTO, speed: 280, altitude: 13000 }
+        - { fix: MUSEL, speed: 280, altitude: 11000 }
+  25*:
+    - arrivalName: "*"
+      frozenSequenceArea: APP
+      sequencingArea: TMC
+      fixes:
+        # ILS
+        - { fix: RIVMI, speed: 200, altitude: 4500, role: IAF }
+        - { fix: LIKBI, speed: 180, altitude: 4500, role: IF }
+        - { fix: CANUP, speed: 180, altitude: 4500, role: IF }
+        - { fix: RUNSU, speed: 180, altitude: 4500, role: IAF }
+        - { fix: VH515, speed: 180, altitude: 4300 }
+        - { fix: SAGNI, speed: 180, altitude: 3800 }
+        - { fix: TOPUN, speed: 180, altitude: 2700 }
+        - { fix: VH536, speed: 160, altitude: 1800 }
+        - { fix: VH528, speed: 160, altitude: 1700 }
+        - { fix: HH832, speed: 180, altitude: 4500 }
+        - { fix: HH813, speed: 180, altitude: 4500 }
+        # RNP Y
+        - { fix: LUDLA, speed: 200, altitude: 4500, role: IAF }
+        - { fix: HH871, speed: 180, altitude: 3600, role: IF }
+        - { fix: HH872, speed: 180, altitude: 3000 }
+        - { fix: HH873, speed: 180, altitude: 1700 }
+        - { fix: HH874, speed: 160, altitude: 1400 }
+        - { fix: LAMMA, speed: 180, altitude: 3600, role: IF }
+        - { fix: VH533, speed: 180, altitude: 2700 }
+        - { fix: VH851, speed: 180, altitude: 1700 }
+        - { fix: VH852, speed: 160, altitude: 1400 }
+        - { fix: VH506, speed: 180, altitude: 2000 }
+        - { fix: VH507, speed: 180, altitude: 1800 }
+        - { fix: VH508, speed: 160, altitude: 1600 }
+        - { fix: VH509, speed: 160, altitude: 1100 }
+    - arrivalName: "ABBEY*"
+      fixes:
+        - { fix: ENPET, speed: 280, altitude: 26000 }
+        - { fix: MUSEL, speed: 280, altitude: 11000 }
+        - { fix: TEDUR, speed: 230, altitude: 6000 }
+    - arrivalName: "BETTY*"
+      fixes:
+        - { fix: SONNY, speed: 280, altitude: 26000 }
+        - { fix: CYBER, speed: 280, altitude: 26000 }
+        - { fix: MANGO, speed: 280, altitude: 13000 }
+        - { fix: TEDUR, speed: 230, altitude: 6000 }
+    - arrivalName: "CANTO*"
+      fixes:
+        - { fix: MAPLE, speed: 280, altitude: 26000 }
+        - { fix: CANTO, speed: 280, altitude: 14000 }
+        - { fix: MURRY, speed: 280, altitude: 11000 }
+    - arrivalName: "SIERA*"
+      fixes:
+        - { fix: SIERA, speed: 280, altitude: 19000 }
+        - { fix: BORDA, speed: 280, altitude: 15000 }
+        - { fix: CANTO, speed: 280, altitude: 13000 }
+        - { fix: MUSEL, speed: 280, altitude: 11000 }       
 
-  - runway: 07L
-    name: SIERA7A
-    waypoints:
-      - { id: SIERA, typicalAltitude: 19000, typicalSpeed: 280 }
-      - { id: CANTO, typicalAltitude: 13000, typicalSpeed: 280 }
-      - { id: MURRY, typicalAltitude: 11000, typicalSpeed: 250 }
-      - { id: SILVA, typicalAltitude: 8000, typicalSpeed: 250 }
-      - { id: LIMES, typicalAltitude: 4000, typicalSpeed: 210 }
-      - { id: TUTBA, typicalAltitude: 2000, typicalSpeed: 180 }
-      - { id: VH701, typicalAltitude: 1700, typicalSpeed: 180 }
-      - { id: VH702, typicalAltitude: 1500, typicalSpeed: 160 }
-      - { id: VHHH, typicalAltitude: 23 }
+areas:
+  TMC:
+    ceilingFt: 28000
+    boundary:
+      - N022.32.16.503 E115.53.15.617 N022.17.26.118 E115.41.23.465
+      - N022.17.26.118 E115.41.23.465 N021.57.27.409 E115.41.28.862
+      - N021.57.27.409 E115.41.28.862 N021.09.21.299 E115.16.56.337
+      - N021.09.21.299 E115.16.56.337 N020.58.37.323 E114.59.24.227
+      - N020.58.37.323 E114.59.24.227 N020.52.14.197 E114.40.56.645
+      - N020.52.14.197 E114.40.56.645 N020.50.12.334 E114.28.10.343
+      - N020.50.12.334 E114.28.10.343 N020.49.35.480 E114.12.16.099
+      - N020.49.35.480 E114.12.16.099 N020.51.35.203 E113.58.25.244
+      - N020.51.35.203 E113.58.25.244 N020.56.41.217 E113.40.40.013
+      - N020.56.41.217 E113.40.40.013 N021.05.27.545 E113.24.13.866
+      - N021.05.27.545 E113.24.13.866 N021.12.59.685 E113.14.38.870
+      - N021.12.59.685 E113.14.38.870 N021.23.02.008 E113.04.55.368
+      - N021.23.02.008 E113.04.55.368 N021.34.24.340 E112.56.49.070
+      - N021.34.24.340 E112.56.49.070 N021.40.50.417 E113.16.17.527
+      - N021.40.50.417 E113.16.17.527 N022.07.06.022 E113.40.14.333
+      - N022.07.06.022 E113.40.14.333 N021.40.00.587 E113.50.55.794 #app edge start (NTZ)
+      - N021.40.00.587 E113.50.55.794 N021.41.44.594 E114.49.19.843
+      - N021.41.44.594 E114.49.19.843 N021.57.13.352 E114.48.17.057
+      - N021.57.13.352 E114.48.17.057 N021.58.37.909 E114.41.45.664
+      - N021.58.37.909 E114.41.45.664 N022.28.45.993 E114.42.05.324 #app edgge end (TME)
+      - N022.28.45.993 E114.42.05.324 N022.30.11.906 E114.45.44.280
+      - N022.30.11.906:E114.45.44.280 N022.32.16.503 E115.53.15.617
 
-  - runway: 07C
-    name: SIERA7A
-    waypoints:
-      - { id: SIERA, typicalAltitude: 19000, typicalSpeed: 280 }
-      - { id: CANTO, typicalAltitude: 13000, typicalSpeed: 280 }
-      - { id: MURRY, typicalAltitude: 11000, typicalSpeed: 250 }
-      - { id: SILVA, typicalAltitude: 8000, typicalSpeed: 250 }
-      - { id: LIMES, typicalAltitude: 4000, typicalSpeed: 210 }
-      - { id: TONIC, typicalAltitude: 2000, typicalSpeed: 180 }
-      - { id: VH710, typicalAltitude: 1700, typicalSpeed: 180 }
-      - { id: VH711, typicalAltitude: 1600, typicalSpeed: 160 }
-      - { id: VHHH, typicalAltitude: 23 }
-
-  - runway: 07R
-    name: SIERA7A
-    waypoints:
-      - { id: SIERA, typicalAltitude: 19000, typicalSpeed: 280 }
-      - { id: CANTO, typicalAltitude: 13000, typicalSpeed: 280 }
-      - { id: MURRY, typicalAltitude: 11000, typicalSpeed: 250 }
-      - { id: SILVA, typicalAltitude: 8000, typicalSpeed: 250 }
-      - { id: LIMES, typicalAltitude: 4000, typicalSpeed: 210 }
-      - { id: STELA, typicalAltitude: 2000, typicalSpeed: 180 }
-      - { id: VH720, typicalAltitude: 1700, typicalSpeed: 180 }
-      - { id: VH721, typicalAltitude: 1600, typicalSpeed: 160 }
-      - { id: VHHH, typicalAltitude: 23 }
-
-  - runway: 07L
-    name: CANTO3A
-    waypoints:
-      - { id: CANTO, typicalAltitude: 13000, typicalSpeed: 280 }
-      - { id: MURRY, typicalAltitude: 11000, typicalSpeed: 250 }
-      - { id: SILVA, typicalAltitude: 8000, typicalSpeed: 250 }
-      - { id: LIMES, typicalAltitude: 4000, typicalSpeed: 210 }
-      - { id: TUTBA, typicalAltitude: 2000, typicalSpeed: 180 }
-      - { id: VH701, typicalAltitude: 1700, typicalSpeed: 180 }
-      - { id: VH702, typicalAltitude: 1500, typicalSpeed: 160 }
-      - { id: VHHH, typicalAltitude: 23 }
-
-  - runway: 07C
-    name: CANTO3A
-    waypoints:
-      - { id: CANTO, typicalAltitude: 13000, typicalSpeed: 280 }
-      - { id: MURRY, typicalAltitude: 11000, typicalSpeed: 250 }
-      - { id: SILVA, typicalAltitude: 8000, typicalSpeed: 250 }
-      - { id: LIMES, typicalAltitude: 4000, typicalSpeed: 210 }
-      - { id: TONIC, typicalAltitude: 2000, typicalSpeed: 180 }
-      - { id: VH710, typicalAltitude: 1700, typicalSpeed: 180 }
-      - { id: VH711, typicalAltitude: 1600, typicalSpeed: 160 }
-      - { id: VHHH, typicalAltitude: 23 }
-
-  - runway: 07R
-    name: CANTO3A
-    waypoints:
-      - { id: CANTO, typicalAltitude: 13000, typicalSpeed: 280 }
-      - { id: MURRY, typicalAltitude: 11000, typicalSpeed: 250 }
-      - { id: SILVA, typicalAltitude: 8000, typicalSpeed: 250 }
-      - { id: LIMES, typicalAltitude: 4000, typicalSpeed: 210 }
-      - { id: STELA, typicalAltitude: 2000, typicalSpeed: 180 }
-      - { id: VH720, typicalAltitude: 1700, typicalSpeed: 180 }
-      - { id: VH721, typicalAltitude: 1600, typicalSpeed: 160 }
-      - { id: VHHH, typicalAltitude: 23 }
-
-  - runway: 07L
-    name: SIERA7C
-    waypoints:
-      - { id: SIERA, typicalAltitude: 19000, typicalSpeed: 280 }
-      - { id: BORDA, typicalAltitude: 17000, typicalSpeed: 280 }
-      - { id: ROCCA, typicalAltitude: 15000, typicalSpeed: 280 }
-      - { id: CANTO, typicalAltitude: 13000, typicalSpeed: 280 }
-      - { id: MURRY, typicalAltitude: 11000, typicalSpeed: 250 }
-      - { id: SILVA, typicalAltitude: 8000, typicalSpeed: 250 }
-      - { id: LIMES, typicalAltitude: 4000, typicalSpeed: 210 }
-      - { id: TUTBA, typicalAltitude: 2000, typicalSpeed: 180 }
-      - { id: VH701, typicalAltitude: 1700, typicalSpeed: 180 }
-      - { id: VH702, typicalAltitude: 1500, typicalSpeed: 160 }
-      - { id: VHHH, typicalAltitude: 23 }
-
-  - runway: 07C
-    name: SIERA7C
-    waypoints:
-      - { id: SIERA, typicalAltitude: 19000, typicalSpeed: 280 }
-      - { id: BORDA, typicalAltitude: 17000, typicalSpeed: 280 }
-      - { id: ROCCA, typicalAltitude: 15000, typicalSpeed: 280 }
-      - { id: CANTO, typicalAltitude: 13000, typicalSpeed: 280 }
-      - { id: MURRY, typicalAltitude: 11000, typicalSpeed: 250 }
-      - { id: SILVA, typicalAltitude: 8000, typicalSpeed: 250 }
-      - { id: LIMES, typicalAltitude: 4000, typicalSpeed: 210 }
-      - { id: TONIC, typicalAltitude: 2000, typicalSpeed: 180 }
-      - { id: VH710, typicalAltitude: 1700, typicalSpeed: 180 }
-      - { id: VH711, typicalAltitude: 1600, typicalSpeed: 160 }
-      - { id: VHHH, typicalAltitude: 23 }
-
-  - runway: 07R
-    name: SIERA7C
-    waypoints:
-      - { id: SIERA, typicalAltitude: 19000, typicalSpeed: 280 }
-      - { id: BORDA, typicalAltitude: 17000, typicalSpeed: 280 }
-      - { id: ROCCA, typicalAltitude: 15000, typicalSpeed: 280 }
-      - { id: CANTO, typicalAltitude: 13000, typicalSpeed: 280 }
-      - { id: MURRY, typicalAltitude: 11000, typicalSpeed: 250 }
-      - { id: SILVA, typicalAltitude: 8000, typicalSpeed: 250 }
-      - { id: LIMES, typicalAltitude: 4000, typicalSpeed: 210 }
-      - { id: STELA, typicalAltitude: 2000, typicalSpeed: 180 }
-      - { id: VH720, typicalAltitude: 1700, typicalSpeed: 180 }
-      - { id: VH721, typicalAltitude: 1600, typicalSpeed: 160 }
-      - { id: VHHH, typicalAltitude: 23 }
-
-  - runway: 25L
-    name: ABBEY3B
-    waypoints:
-      - { id: ABBEY, typicalSpeed: 280 }
-      - { id: MUSEL, typicalAltitude: 11000, typicalSpeed: 280 }
-      - { id: TEDUR, typicalAltitude: 6000, typicalSpeed: 220 }
-      - { id: RIVMI, typicalAltitude: 4500, typicalSpeed: 200 }
-      - { id: RUNSU, typicalAltitude: 4500, typicalSpeed: 180 }
-      - { id: VH515, typicalAltitude: 4300, typicalSpeed: 180 }
-      - { id: SAGNI, typicalAltitude: 3800, typicalSpeed: 180 }
-      - { id: TOPUN, typicalAltitude: 2700, typicalSpeed: 180 }
-      - { id: VH536, typicalAltitude: 1800, typicalSpeed: 160 }
-      - { id: VH528, typicalAltitude: 1700, typicalSpeed: 160 }
-      - { id: VHHH, typicalAltitude: 23 }
-
-  - runway: 25C
-    name: ABBEY3B
-    waypoints:
-      - { id: ABBEY, typicalSpeed: 280 }
-      - { id: MUSEL, typicalAltitude: 11000, typicalSpeed: 280 }
-      - { id: TEDUR, typicalAltitude: 6000, typicalSpeed: 220 }
-      - { id: RIVMI, typicalAltitude: 4500, typicalSpeed: 200 }
-      - { id: CANUP, typicalAltitude: 4500, typicalSpeed: 180 }
-      - { id: HH832, typicalAltitude: 4500, typicalSpeed: 180 }
-      - { id: VHHH, typicalAltitude: 23 }
-
-  - runway: 25R
-    name: ABBEY3B
-    waypoints:
-      - { id: ABBEY, typicalSpeed: 280 }
-      - { id: MUSEL, typicalAltitude: 11000, typicalSpeed: 280 }
-      - { id: TEDUR, typicalAltitude: 6000, typicalSpeed: 220 }
-      - { id: RIVMI, typicalAltitude: 4500, typicalSpeed: 200 }
-      - { id: LIKBI, typicalAltitude: 4500, typicalSpeed: 180 }
-      - { id: HH813, typicalAltitude: 4500, typicalSpeed: 180 }
-      - { id: VHHH, typicalAltitude: 23 }
-
-  - runway: 25L
-    name: BETTY3B
-    waypoints:
-      - { id: BETTY, typicalSpeed: 280 }
-      - { id: MANGO, typicalAltitude: 13000, typicalSpeed: 280 }
-      - { id: TEDUR, typicalAltitude: 6000, typicalSpeed: 220 }
-      - { id: RIVMI, typicalAltitude: 4500, typicalSpeed: 200 }
-      - { id: RUNSU, typicalAltitude: 4500, typicalSpeed: 180 }
-      - { id: VH515, typicalAltitude: 4300, typicalSpeed: 180 }
-      - { id: SAGNI, typicalAltitude: 3800, typicalSpeed: 180 }
-      - { id: TOPUN, typicalAltitude: 2700, typicalSpeed: 180 }
-      - { id: VH536, typicalAltitude: 1800, typicalSpeed: 160 }
-      - { id: VH528, typicalAltitude: 1700, typicalSpeed: 160 }
-      - { id: VHHH, typicalAltitude: 23 }
-
-  - runway: 25C
-    name: BETTY3B
-    waypoints:
-      - { id: BETTY, typicalSpeed: 280 }
-      - { id: MANGO, typicalAltitude: 13000, typicalSpeed: 280 }
-      - { id: TEDUR, typicalAltitude: 6000, typicalSpeed: 220 }
-      - { id: RIVMI, typicalAltitude: 4500, typicalSpeed: 200 }
-      - { id: CANUP, typicalAltitude: 4500, typicalSpeed: 180 }
-      - { id: HH832, typicalAltitude: 4500, typicalSpeed: 180 }
-      - { id: VHHH, typicalAltitude: 23 }
-
-  - runway: 25R
-    name: BETTY3B
-    waypoints:
-      - { id: BETTY, typicalSpeed: 280 }
-      - { id: MANGO, typicalAltitude: 13000, typicalSpeed: 280 }
-      - { id: TEDUR, typicalAltitude: 6000, typicalSpeed: 220 }
-      - { id: RIVMI, typicalAltitude: 4500, typicalSpeed: 200 }
-      - { id: LIKBI, typicalAltitude: 4500, typicalSpeed: 180 }
-      - { id: HH813, typicalAltitude: 4500, typicalSpeed: 180 }
-      - { id: VHHH, typicalAltitude: 23 }
-
-  - runway: 25L
-    name: CANTO3B
-    waypoints:
-      - { id: CANTO, typicalAltitude: 13000, typicalSpeed: 280 }
-      - { id: MURRY, typicalAltitude: 11000, typicalSpeed: 280 }
-      - { id: SILVA, typicalAltitude: 9000, typicalSpeed: 250 }
-      - { id: HH623, typicalAltitude: 6000, typicalSpeed: 250 }
-      - { id: HH622, typicalAltitude: 6000, typicalSpeed: 250 }
-      - { id: TEDUR, typicalAltitude: 6000, typicalSpeed: 220 }
-      - { id: RIVMI, typicalAltitude: 4500, typicalSpeed: 200 }
-      - { id: RUNSU, typicalAltitude: 4500, typicalSpeed: 180 }
-      - { id: VH515, typicalAltitude: 4300, typicalSpeed: 180 }
-      - { id: SAGNI, typicalAltitude: 3800, typicalSpeed: 180 }
-      - { id: TOPUN, typicalAltitude: 2700, typicalSpeed: 180 }
-      - { id: VH536, typicalAltitude: 1800, typicalSpeed: 160 }
-      - { id: VH528, typicalAltitude: 1700, typicalSpeed: 160 }
-      - { id: VHHH, typicalAltitude: 23 }
-
-  - runway: 25C
-    name: CANTO3B
-    waypoints:
-      - { id: CANTO, typicalAltitude: 13000, typicalSpeed: 280 }
-      - { id: MURRY, typicalAltitude: 11000, typicalSpeed: 280 }
-      - { id: SILVA, typicalAltitude: 9000, typicalSpeed: 250 }
-      - { id: HH623, typicalAltitude: 6000, typicalSpeed: 250 }
-      - { id: HH622, typicalAltitude: 6000, typicalSpeed: 250 }
-      - { id: TEDUR, typicalAltitude: 6000, typicalSpeed: 220 }
-      - { id: RIVMI, typicalAltitude: 4500, typicalSpeed: 200 }
-      - { id: CANUP, typicalAltitude: 4500, typicalSpeed: 180 }
-      - { id: HH832, typicalAltitude: 4500, typicalSpeed: 180 }
-      - { id: VHHH, typicalAltitude: 23 }
-
-  - runway: 25R
-    name: CANTO3B
-    waypoints:
-      - { id: CANTO, typicalAltitude: 13000, typicalSpeed: 280 }
-      - { id: MURRY, typicalAltitude: 11000, typicalSpeed: 280 }
-      - { id: SILVA, typicalAltitude: 9000, typicalSpeed: 250 }
-      - { id: HH623, typicalAltitude: 6000, typicalSpeed: 250 }
-      - { id: HH622, typicalAltitude: 6000, typicalSpeed: 250 }
-      - { id: TEDUR, typicalAltitude: 6000, typicalSpeed: 220 }
-      - { id: RIVMI, typicalAltitude: 4500, typicalSpeed: 200 }
-      - { id: LIKBI, typicalAltitude: 4500, typicalSpeed: 180 }
-      - { id: HH813, typicalAltitude: 4500, typicalSpeed: 180 }
-      - { id: VHHH, typicalAltitude: 23 }
-
-  - runway: 25L
-    name: SIERA7B
-    waypoints:
-      - { id: SIERA, typicalAltitude: 19000, typicalSpeed: 280 }
-      - { id: CANTO, typicalAltitude: 13000, typicalSpeed: 280 }
-      - { id: MURRY, typicalAltitude: 11000, typicalSpeed: 280 }
-      - { id: SILVA, typicalAltitude: 9000, typicalSpeed: 250 }
-      - { id: HH623, typicalAltitude: 6000, typicalSpeed: 250 }
-      - { id: HH622, typicalAltitude: 6000, typicalSpeed: 250 }
-      - { id: TEDUR, typicalAltitude: 6000, typicalSpeed: 220 }
-      - { id: RIVMI, typicalAltitude: 4500, typicalSpeed: 200 }
-      - { id: RUNSU, typicalAltitude: 4500, typicalSpeed: 180 }
-      - { id: VH515, typicalAltitude: 4300, typicalSpeed: 180 }
-      - { id: SAGNI, typicalAltitude: 3800, typicalSpeed: 180 }
-      - { id: TOPUN, typicalAltitude: 2700, typicalSpeed: 180 }
-      - { id: VH536, typicalAltitude: 1800, typicalSpeed: 160 }
-      - { id: VH528, typicalAltitude: 1700, typicalSpeed: 160 }
-      - { id: VHHH, typicalAltitude: 23 }
-
-  - runway: 25C
-    name: SIERA7B
-    waypoints:
-      - { id: SIERA, typicalAltitude: 19000, typicalSpeed: 280 }
-      - { id: CANTO, typicalAltitude: 13000, typicalSpeed: 280 }
-      - { id: MURRY, typicalAltitude: 11000, typicalSpeed: 280 }
-      - { id: SILVA, typicalAltitude: 9000, typicalSpeed: 250 }
-      - { id: HH623, typicalAltitude: 6000, typicalSpeed: 250 }
-      - { id: HH622, typicalAltitude: 6000, typicalSpeed: 250 }
-      - { id: TEDUR, typicalAltitude: 6000, typicalSpeed: 220 }
-      - { id: RIVMI, typicalAltitude: 4500, typicalSpeed: 200 }
-      - { id: CANUP, typicalAltitude: 4500, typicalSpeed: 180 }
-      - { id: HH832, typicalAltitude: 4500, typicalSpeed: 180 }
-      - { id: VHHH, typicalAltitude: 23 }
-
-  - runway: 25R
-    name: SIERA7B
-    waypoints:
-      - { id: SIERA, typicalAltitude: 19000, typicalSpeed: 280 }
-      - { id: CANTO, typicalAltitude: 13000, typicalSpeed: 280 }
-      - { id: MURRY, typicalAltitude: 11000, typicalSpeed: 280 }
-      - { id: SILVA, typicalAltitude: 9000, typicalSpeed: 250 }
-      - { id: HH623, typicalAltitude: 6000, typicalSpeed: 250 }
-      - { id: HH622, typicalAltitude: 6000, typicalSpeed: 250 }
-      - { id: TEDUR, typicalAltitude: 6000, typicalSpeed: 220 }
-      - { id: RIVMI, typicalAltitude: 4500, typicalSpeed: 200 }
-      - { id: LIKBI, typicalAltitude: 4500, typicalSpeed: 180 }
-      - { id: HH813, typicalAltitude: 4500, typicalSpeed: 180 }
-      - { id: VHHH, typicalAltitude: 23 }
-
-  - runway: 25L
-    name: SIERA7D
-    waypoints:
-      - { id: SIERA, typicalAltitude: 19000, typicalSpeed: 280 }
-      - { id: BORDA, typicalAltitude: 17000, typicalSpeed: 280 }
-      - { id: ROCCA, typicalAltitude: 15000, typicalSpeed: 280 }
-      - { id: CANTO, typicalAltitude: 13000, typicalSpeed: 280 }
-      - { id: MURRY, typicalAltitude: 11000, typicalSpeed: 280 }
-      - { id: SILVA, typicalAltitude: 9000, typicalSpeed: 250 }
-      - { id: HH623, typicalAltitude: 6000, typicalSpeed: 250 }
-      - { id: HH622, typicalAltitude: 6000, typicalSpeed: 250 }
-      - { id: TEDUR, typicalAltitude: 6000, typicalSpeed: 220 }
-      - { id: RIVMI, typicalAltitude: 4500, typicalSpeed: 200 }
-      - { id: RUNSU, typicalAltitude: 4500, typicalSpeed: 180 }
-      - { id: VH515, typicalAltitude: 4300, typicalSpeed: 180 }
-      - { id: SAGNI, typicalAltitude: 3800, typicalSpeed: 180 }
-      - { id: TOPUN, typicalAltitude: 2700, typicalSpeed: 180 }
-      - { id: VH536, typicalAltitude: 1800, typicalSpeed: 160 }
-      - { id: VH528, typicalAltitude: 1700, typicalSpeed: 160 }
-      - { id: VHHH, typicalAltitude: 23 }
-
-  - runway: 25C
-    name: SIERA7D
-    waypoints:
-      - { id: SIERA, typicalAltitude: 19000, typicalSpeed: 280 }
-      - { id: BORDA, typicalAltitude: 17000, typicalSpeed: 280 }
-      - { id: ROCCA, typicalAltitude: 15000, typicalSpeed: 280 }
-      - { id: CANTO, typicalAltitude: 13000, typicalSpeed: 280 }
-      - { id: MURRY, typicalAltitude: 11000, typicalSpeed: 280 }
-      - { id: SILVA, typicalAltitude: 9000, typicalSpeed: 250 }
-      - { id: HH623, typicalAltitude: 6000, typicalSpeed: 250 }
-      - { id: HH622, typicalAltitude: 6000, typicalSpeed: 250 }
-      - { id: TEDUR, typicalAltitude: 6000, typicalSpeed: 220 }
-      - { id: RIVMI, typicalAltitude: 4500, typicalSpeed: 200 }
-      - { id: CANUP, typicalAltitude: 4500, typicalSpeed: 180 }
-      - { id: HH832, typicalAltitude: 4500, typicalSpeed: 180 }
-      - { id: VHHH, typicalAltitude: 23 }
-
-  - runway: 25R
-    name: SIERA7D
-    waypoints:
-      - { id: SIERA, typicalAltitude: 19000, typicalSpeed: 280 }
-      - { id: BORDA, typicalAltitude: 17000, typicalSpeed: 280 }
-      - { id: ROCCA, typicalAltitude: 15000, typicalSpeed: 280 }
-      - { id: CANTO, typicalAltitude: 13000, typicalSpeed: 280 }
-      - { id: MURRY, typicalAltitude: 11000, typicalSpeed: 280 }
-      - { id: SILVA, typicalAltitude: 9000, typicalSpeed: 250 }
-      - { id: HH623, typicalAltitude: 6000, typicalSpeed: 250 }
-      - { id: HH622, typicalAltitude: 6000, typicalSpeed: 250 }
-      - { id: TEDUR, typicalAltitude: 6000, typicalSpeed: 220 }
-      - { id: RIVMI, typicalAltitude: 4500, typicalSpeed: 200 }
-      - { id: LIKBI, typicalAltitude: 4500, typicalSpeed: 180 }
-      - { id: HH813, typicalAltitude: 4500, typicalSpeed: 180 }
-      - { id: VHHH, typicalAltitude: 23 }
+  APP:
+    ceilingFt: 16000
+    boundary:
+      - N022.07.06.022 E113.40.14.333 N021.40.00.587 E113.50.55.794 #app edge start (NTZ)
+      - N021.40.00.587 E113.50.55.794 N021.41.44.594 E114.49.19.843
+      - N021.41.44.594 E114.49.19.843 N021.57.13.352 E114.48.17.057
+      - N021.57.13.352 E114.48.17.057 N021.58.37.909 E114.41.45.664
+      - N021.58.37.909 E114.41.45.664 N022.28.45.993 E114.42.05.324 #app edgge end (TME)
+      - N022.28.45.993 E114.42.05.324 N022.23.48.195 E114.30.38.171
+      - N022.23.48.195 E114.30.38.171 N022.32.14.091 E114.28.31.845
+      - N022.32.14.091 E114.28.31.845 N022.36.46.056 E114.23.39.713
+      - N022.36.46.056 E114.23.39.713 N022.24.26.252 E113.49.21.761
+      - N022.24.26.252:E113.49.21.761 N022.13.48.894 E113.39.55.580
+      - N022.13.48.894:E113.39.55.580 N022.07.06.022 E113.40.14.333
