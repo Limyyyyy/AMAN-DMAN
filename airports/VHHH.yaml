@@ -1,8 +1,8 @@
 # yaml-language-server: $schema=./airport.schema.yaml
 
 location:
-  latitude: 22.3088888889
-  longitude: 113.9147222222
+  latitude: 22.308889
+  longitude: 113.914722
 
 feederFixes: ["MUSEL", "MANGO", "MURRY"]
 feederFixTimelineArrivalLabelLayoutId: "VHHHTMC"
@@ -10,8 +10,8 @@ feederFixTimelineArrivalLabelLayoutId: "VHHHTMC"
 runwayThresholds:
   07L:
     location:
-      latitude: 22.308889
-      longitude: 113.914722
+      latitude: 22.321589
+      longitude: 113.882295
     elevation: 23
     trueHeading: 71
   07C:
