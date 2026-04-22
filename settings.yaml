@@ -6,14 +6,14 @@ arrivalLabelLayouts:
     - {src: callSign, w: 9}
     - {src: assignedStar, w: 4, maxLen: 3}
     - {src: timeToLoseOrGain, w: 4, align: left}
-    - {src: estimatedArrivalTime, timeFormat: mm, w: 3, align: right}
+    - {src: scheduledArrivalTime, timeFormat: mm, w: 3, align: right}
 
   VHHHAPP:
     - {src: assignedRunway, w: 4}
     - {src: callSign, w: 9}
     - {src: assignedStar, w: 4, maxLen: 3}
     - {src: timeToLoseOrGain, w: 4, align: left}
-    - {src: scheduledLandingTime, timeFormat: mm, w: 3, align: right}
+    - {src: estimatedLandingTime, timeFormat: mm, w: 3, align: right}
   
 departureLabelLayouts:
   VHHHDEP:

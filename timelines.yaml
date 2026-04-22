@@ -3,7 +3,7 @@ timelines:
   VHHH:
     defaults:
       defaultArrivalLabelLayoutId: "VHHHAPP"
-      defaultDepartureLabelLayoutId: "VHHHDep"
+      defaultDepartureLabelLayoutId: "VHHHDEP"
     runwayBased:
     - timelineTitle: "RWY07ALL"
       left: []

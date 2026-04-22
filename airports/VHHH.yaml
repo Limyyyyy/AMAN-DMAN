@@ -1,47 +1,47 @@
-# yaml-language-server: $schema=./stars.schema.yaml
+# yaml-language-server: $schema=./airport.schema.yaml
 
 location:
   latitude: 22.3088888889
   longitude: 113.9147222222
 
 feederFixes: ["MUSEL", "MANGO", "MURRY"]
-feederFixTimelineArrivalLabelLayoutId: "TMCARR"
+feederFixTimelineArrivalLabelLayoutId: "VHHHTMC"
 
 runwayThresholds:
   07L:
     location:
-      latitude: 22.3215888889
-      longitude: 113.8822944444
+      latitude: 22.308889
+      longitude: 113.914722
     elevation: 23
     trueHeading: 71
   07C:
     location:
-      latitude: 22.3112722222
-      longitude: 113.8990666667
+      latitude: 22.311272
+      longitude: 113.899067
     elevation: 23
     trueHeading: 71
   07R:
     location:
       latitude: 22.296675
-      longitude: 113.8994416667
+      longitude: 113.899442
     elevation: 23
     trueHeading: 71
   25L:
     location:
-      latitude: 22.3074305556
-      longitude: 113.9328194444
+      latitude: 22.307431
+      longitude: 113.932820
     elevation: 23
     trueHeading: 251
   25C:
     location:
-      latitude: 22.3202361111
-      longitude: 113.9268833333
+      latitude: 22.320236
+      longitude: 113.926883
     elevation: 23
     trueHeading: 251
   25R:
     location:
-      latitude: 22.3317916667
-      longitude: 113.9139555556
+      latitude: 22.331792
+      longitude: 113.913956
     elevation: 23
     trueHeading: 251
 independentRunwaySystems:
@@ -84,22 +84,26 @@ arrivalProfiles:
         - { fix: ENPET, speed: 280, altitude: 26000 }
         - { fix: MUSEL, speed: 280, altitude: 11000 }
         - { fix: HH512, speed: 250, altitude: 9000 }
+        - { fix: HH511, speed: 230, altitude: 6000 }
     - arrivalName: "BETTY*"
       fixes:
         - { fix: SONNY, speed: 280, altitude: 26000 }
         - { fix: CYBER, speed: 280, altitude: 26000 }
         - { fix: MANGO, speed: 280, altitude: 13000 }
+        - { fix: HH511, speed: 230, altitude: 6000 }
     - arrivalName: "CANTO*"
       fixes:
         - { fix: MAPLE, speed: 280, altitude: 26000 }
         - { fix: CANTO, speed: 280, altitude: 14000 }
-        - { fix: MURRY, speed: 280, altitude: 11000 }
+        - { fix: MURRY, speed: 250, altitude: 11000 }
+        - { fix: SILVA, speed: 230, altitude: 9000 }
     - arrivalName: "SIERA*"
       fixes:
         - { fix: SIERA, speed: 280, altitude: 19000 }
         - { fix: BORDA, speed: 280, altitude: 15000 }
         - { fix: CANTO, speed: 280, altitude: 13000 }
-        - { fix: MUSEL, speed: 280, altitude: 11000 }
+        - { fix: MURRY, speed: 250, altitude: 11000 }
+        - { fix: SILVA, speed: 230, altitude: 9000 }
   25*:
     - arrivalName: "*"
       frozenSequenceArea: APP
@@ -141,18 +145,22 @@ arrivalProfiles:
         - { fix: SONNY, speed: 280, altitude: 26000 }
         - { fix: CYBER, speed: 280, altitude: 26000 }
         - { fix: MANGO, speed: 280, altitude: 13000 }
+        - { fix: HH622, speed: 230, altitude: 6000 }
         - { fix: TEDUR, speed: 230, altitude: 6000 }
     - arrivalName: "CANTO*"
       fixes:
         - { fix: MAPLE, speed: 280, altitude: 26000 }
         - { fix: CANTO, speed: 280, altitude: 14000 }
         - { fix: MURRY, speed: 280, altitude: 11000 }
+        - { fix: HH623, speed: 230, altitude: 6000 } 
     - arrivalName: "SIERA*"
       fixes:
         - { fix: SIERA, speed: 280, altitude: 19000 }
         - { fix: BORDA, speed: 280, altitude: 15000 }
         - { fix: CANTO, speed: 280, altitude: 13000 }
-        - { fix: MUSEL, speed: 280, altitude: 11000 }       
+        - { fix: MUSEL, speed: 280, altitude: 11000 }
+        - { fix: HH623, speed: 230, altitude: 6000 } 
+        - { fix: TEDUR, speed: 230, altitude: 6000 }
 
 areas:
   TMC:
@@ -179,7 +187,7 @@ areas:
       - N021.57.13.352 E114.48.17.057 N021.58.37.909 E114.41.45.664
       - N021.58.37.909 E114.41.45.664 N022.28.45.993 E114.42.05.324 #app edgge end (TME)
       - N022.28.45.993 E114.42.05.324 N022.30.11.906 E114.45.44.280
-      - N022.30.11.906:E114.45.44.280 N022.32.16.503 E115.53.15.617
+      - N022.30.11.906 E114.45.44.280 N022.32.16.503 E115.53.15.617
 
   APP:
     ceilingFt: 16000
@@ -193,5 +201,5 @@ areas:
       - N022.23.48.195 E114.30.38.171 N022.32.14.091 E114.28.31.845
       - N022.32.14.091 E114.28.31.845 N022.36.46.056 E114.23.39.713
       - N022.36.46.056 E114.23.39.713 N022.24.26.252 E113.49.21.761
-      - N022.24.26.252:E113.49.21.761 N022.13.48.894 E113.39.55.580
-      - N022.13.48.894:E113.39.55.580 N022.07.06.022 E113.40.14.333
+      - N022.24.26.252 E113.49.21.761 N022.13.48.894 E113.39.55.580
+      - N022.13.48.894 E113.39.55.580 N022.07.06.022 E113.40.14.333
